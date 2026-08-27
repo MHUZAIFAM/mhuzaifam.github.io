@@ -1,5 +1,5 @@
-User-agent: Googlebot
-User-agent: AdsBot-Google
-Disallow: /
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /editor.html
+
+Sitemap: https://mhuzaifam.github.io/sitemap.xml
