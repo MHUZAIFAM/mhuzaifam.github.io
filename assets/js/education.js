@@ -76,6 +76,9 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 function showExperience() {
+  // The slideshow container (#image) is not present on every page - without
+  // this guard the interval throws a TypeError every 3 seconds, forever.
+  if (!img) return;
   setInterval(function () {
     if (currentItem === experience.length) {
       currentItem = 0;
@@ -143,13 +146,17 @@ const showCards1 = () => {
           <div class="text-center text-muted font-weight-bolder p-2">${description}</div>
       </div>`)
   );
-  bagdes.innerHTML = output;
+  // .badges is not present on every page
+  if (bagdes) bagdes.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards1);
 
 /* Timeline Section*/
 
 $(function () {
+  // ScrollReveal is not bundled on this site; without it every call below
+  // throws and the timeline reveal animations silently do nothing.
+  if (typeof ScrollReveal === "undefined") return;
   window.sr = ScrollReveal();
 
   if ($(window).width() < 768) {
