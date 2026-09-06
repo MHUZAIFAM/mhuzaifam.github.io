@@ -20,7 +20,7 @@ const projects = [
     description: "Deep learning model to classify brain tumors from MRI images using convolutional neural networks.",
     tagimg: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
     Previewlink: "",
-    Githublink: "https://github.com/MHUZAIFAM/BRAIN-TUMOR-MRI"
+    Githublink: "https://github.com/MHUZAIFAM/Projects/tree/main/Machine%20Learning/CNN/BRAIN%20TUMOR%20MRI"
     },
 
     {
@@ -29,7 +29,7 @@ const projects = [
     description: "Deep learning model using MobileNetV2 and Grad-CAM visualization to classify plant diseases.",
     tagimg: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
     Previewlink: "",
-    Githublink: "https://github.com/MHUZAIFAM/PLANTS-DISEASE"
+    Githublink: "https://github.com/MHUZAIFAM/Projects/tree/main/Machine%20Learning/CNN/PLANTS%20DISEASE"
     },
 
     {
